@@ -586,8 +586,8 @@ function toggleTheme() {
   const html   = document.documentElement;
   const isDark = html.getAttribute("data-theme") === "dark";
   html.setAttribute("data-theme", isDark ? "light" : "dark");
-  const currentLabel = isDark ? "Light" : "Dark";
-  const altLabel     = isDark ? "Dark" : "Light";
+  const currentLabel = isDark ? "Dark" : "Light";
+  const altLabel     = isDark ? "Light" : "Dark";
   document.getElementById("theme-label").textContent = currentLabel;
   const altEl = document.getElementById("theme-label-alt");
   if (altEl) altEl.textContent = altLabel;
